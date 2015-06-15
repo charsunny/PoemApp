@@ -2,8 +2,8 @@
 Poem app is a Mac OS X app for chinese poem read. 
 
 ##features
-* Poem Recommand (almost done)
-* Poem Recommand history (done)
+* Poem Recomand (almost done)
+* Poem Recomand history (done)
 * local Poem Search (todo)
 * User collections and other settings (todo)
 
