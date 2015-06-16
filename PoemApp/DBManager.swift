@@ -29,7 +29,9 @@ class DBManager: NSObject {
     
     func queryPoem(index:Int) -> Poem {
         var poem = Poem()
-        
+        if let row = poems.filter(Expression("id") == index).first {
+            poem = Poem(row:row)
+        }
         return poem
     }
     
@@ -67,6 +69,28 @@ class DBManager: NSObject {
         }
         
         return results
+    }
+    
+    func queryAllPoem() -> [Poem] {
+        var results : [Poem] = []
+        for row in poems {
+            var poem = Poem(row: row)
+            results.append(poem)
+        }
+        return results
+    }
+    
+    func queryAllPoet() -> [Author] {
+        var results : [Author] = []
+        for row in authors {
+            var author = Author(row: row)
+            results.append(author)
+        }
+        return results
+    }
+    
+    func queryAllSongName() -> [Song] {
+        return []
     }
     
     func queryAuthorbyId(index:Int) -> Author {

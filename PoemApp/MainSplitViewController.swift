@@ -11,6 +11,7 @@ import Cocoa
 
 let kShowPoemNotification  = "showPoemNotificaion"
 let kShowEmptyNotification  = "showEmptyContentNotification"
+let kShowAuthorNotification  = "showAuthorNotificaion"
 
 class MainSplitViewController: NSSplitViewController {
     

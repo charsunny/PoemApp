@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A1DEFDC9-8283-4548-B700-578B55FAB3EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PoemApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CBF8F0D0AC3E7F947A89F6818EA0F2ADBFB0D157</key>
+		<string>https://github.com/charsunny/PoemApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PoemApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CBF8F0D0AC3E7F947A89F6818EA0F2ADBFB0D157</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/charsunny/PoemApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CBF8F0D0AC3E7F947A89F6818EA0F2ADBFB0D157</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CBF8F0D0AC3E7F947A89F6818EA0F2ADBFB0D157</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PoemApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

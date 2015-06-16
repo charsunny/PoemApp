@@ -23,6 +23,7 @@ class RecTableCellView: NSTableCellView {
         super.drawRect(dirtyRect)
         iconImage.wantsLayer = true
         iconImage.layer?.masksToBounds = true
+        iconImage.layer?.cornerRadius = 22
     }
     
 }

@@ -22,7 +22,7 @@ class Author {
     init(row:Row) {
         index = row.get(Expression("id"))
         name = row.get(Expression("name_cn"))
-        desc = row.get(Expression("description_cn")) ?? ""
+        desc = row.get(Expression("description_cn")) ?? "暂无介绍。"
         //age = row.get(Expression("period_id"))
         pinyin = row.get(Expression("pinyin_roman")) ?? ""
         pinyin = pinyin.stringByReplacingOccurrencesOfString(" ", withString: "")
@@ -48,4 +48,10 @@ class Poem: NSObject {
         title = row.get(Expression("name_cn"))
         content = row.get(Expression("text_cn"))
     }
+}
+
+class Song {
+    var index:Int = 0
+    var name:String = ""
+    var desc:String = ""
 }

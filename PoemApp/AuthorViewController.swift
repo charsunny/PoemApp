@@ -12,6 +12,7 @@ extension String {
     func trimContent()->String {
         var str = (self as NSString).stringByReplacingOccurrencesOfString("\n", withString: "")
         str = (str as NSString).stringByReplacingOccurrencesOfString("\r", withString: "")
+        str = (str as NSString).stringByReplacingOccurrencesOfString(" ", withString: "")
         return str
     }
 }
