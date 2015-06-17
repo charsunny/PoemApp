@@ -48,6 +48,17 @@ class ContentRootViewController: NSViewController {
         }
     }
     
+    func showAuthor(author:Author) {
+        if currentViewController != authorViewController {
+            authorViewController.loadAuthorData(author)
+            transitionFromViewController(currentViewController, toViewController: authorViewController, options: NSViewControllerTransitionOptions.SlideForward, completionHandler: { () -> Void in
+                self.currentViewController = self.authorViewController
+            })
+        } else {
+            authorViewController.loadAuthorData(author)
+        }
+    }
+    
     func showEmptyView() {
         if currentViewController != emptyViewController {
             emptyViewController.showEmpty()

@@ -22,6 +22,7 @@ class MainSplitViewController: NSSplitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showPoem:", name: kShowPoemNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showAuthor:", name: kShowAuthorNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showEmptyView:", name: kShowEmptyNotification, object: nil)
         for splitViewItem in splitViewItems {
             if let splitViewItem = splitViewItem as? NSSplitViewItem {
@@ -45,6 +46,12 @@ class MainSplitViewController: NSSplitViewController {
     func showPoem(notif:NSNotification) {
         if let poem = notif.userInfo!["poem"] as? Poem {
             contentRootViewController.showPoem(poem)
+        }
+    }
+    
+    func showAuthor(notif:NSNotification) {
+        if let author = notif.userInfo!["author"] as? Author {
+            contentRootViewController.showAuthor(author)
         }
     }
     
